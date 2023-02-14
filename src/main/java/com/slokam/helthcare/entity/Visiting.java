@@ -30,6 +30,11 @@ public class Visiting {
 	private Appointment appointment;
 	
 	
+	
+	
+	
+	
+	
 	public Appointment getAppointment() {
 		return appointment;
 	}

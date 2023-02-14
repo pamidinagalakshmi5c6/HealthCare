@@ -10,7 +10,10 @@ import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Length;
 
+import lombok.Data;
+
 @Entity
+@Data
 @Table(name="disease")
 public class Disease {
 
@@ -24,28 +27,6 @@ public class Disease {
 	private String diseaseCode;
 	
 	
-	public String getDiseaseCode() {
-		return diseaseCode;
-	}
-	public void setDiseaseCode(String diseaseCode) {
-		this.diseaseCode = diseaseCode;
-	}
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	@Override
-	public String toString() {
-		return "Disease [id=" + id + ", name=" + name + "]";
-	}
 	
 	
 }

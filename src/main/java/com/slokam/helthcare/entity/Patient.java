@@ -20,6 +20,12 @@ public class Patient {
 	@Column(name="phnnum")
 	private Long phone;
 	
+	
+	
+	
+	
+	
+	
 	public Integer getId() {
 		return id;
 	}
