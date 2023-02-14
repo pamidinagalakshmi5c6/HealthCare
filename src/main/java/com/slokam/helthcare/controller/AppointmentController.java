@@ -26,7 +26,9 @@ public class AppointmentController {
 	  (@RequestBody Appointment appointment) throws PatientException{
 		LOGGER.debug("Entered into createAppointment");
 		 ResponseEntity<String> re =null;
-		if(appointment!=null){
+		
+		 if(appointment!=null)
+		{
 			LOGGER.debug("Appointment::"+appointment);
 			appointmentService.createAppointment(appointment);
 		    re = new ResponseEntity<String>("Successfully inserted",HttpStatus.OK);
